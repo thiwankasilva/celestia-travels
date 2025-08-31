@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Placemark>
+      <name>Sigiriya</name>
+      <Point>
+        <coordinates>80.7596,7.9569,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kandy</name>
+      <Point>
+        <coordinates>80.6337,7.2906,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nuwara Eliya</name>
+      <Point>
+        <coordinates>80.7891,6.9497,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ella</name>
+      <Point>
+        <coordinates>81.0466,6.8667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yala</name>
+      <Point>
+        <coordinates>81.521,6.3619,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bentota</name>
+      <Point>
+        <coordinates>79.997,6.4259,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Colombo</name>
+      <Point>
+        <coordinates>79.8612,6.9271,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>8 Days – Essence of Sri Lanka Route</name>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>80.7596,7.9569,0 80.6337,7.2906,0 80.7891,6.9497,0 81.0466,6.8667,0 81.521,6.3619,0 79.997,6.4259,0 79.8612,6.9271,0</coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

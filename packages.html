@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Celestia Travels</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&amp;family=Roboto&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Icon Font Stylesheet -->
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    </link>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        id="spinner">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
+                            class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div> -->
+    <!-- <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
+                    <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-light" data-bs-toggle="dropdown" href="#"><small><i
+                                    class="fa fa-home me-2"></i> My Dashboard</small></a>
+                        <div class="dropdown-menu rounded">
+                            <a class="dropdown-item" href="#"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-bell me-2"></i> Notifications</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    <!-- </div>
+    </div> -->
+    <!-- Topbar End -->
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a class="navbar-brand p-0" href="">
+                <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Celestia</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="services.html">Services</a>
+                    <a class="nav-item nav-link active" href="packages.html">Packages</a>
+                                        <a class="nav-item nav-link" href="gallery.html">Our Gallery</a>
+                    <!-- <a class="nav-item nav-link" href="blog.html">Blog</a> -->
+                    <!-- <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a class="dropdown-item" href="destination.html">Destination</a>
+                            <a class="dropdown-item" href="tour.html">Explore Tour</a>
+                            <a class="dropdown-item" href="booking.html">Travel Booking</a>
+                            <a class="dropdown-item" href="gallery.html">Our Gallery</a>
+                            <a class="dropdown-item" href="guides.html">Travel Guides</a>
+                            <a class="dropdown-item" href="testimonial.html">Testimonial</a>
+                            <a class="dropdown-item" href="404.html">404 Page</a>
+                        </div> -->
+                </div>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+            <a class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4" href="booking.html">Book Now</a>
+    </div>
+    </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4">Travel Packages
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Packages</li>
+                </ol>
+            </h3>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- Packages Start -->
+    <div class="container-fluid packages py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Packages</h5>
+                <h1 class="mb-0">Awesome Packages</h1>
+            </div>
+            <div class="row g-4">
+                <!-- Package 2-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Around Sri lanka" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-knuckles.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>All in One</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>14 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$2000.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Sri Lanka in 14 Days</h5>
+                                <small class="text-uppercase">Adventure/History/Nature/Urban</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Drive into authentic Sri Lankan life — villages, wildlife, and wonder. Experience the warm hospitality that make every journey unforgettable.
+                                </p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4"
+                                        href="sri-lanka-14days-roadtrip.html">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="8 Days – Essence of Sri Lanka" class="img-fluid w-100 rounded-top"
+                                src="img/8-days-essence-of-sri-lanka.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-map-marker-alt me-2"></i>Sri Lanka
+                                </small>
+                                <small class="flex-fill text-center border-end py-2">
+                                    <i class="fa fa-calendar-alt me-2"></i>8 Days
+                                </small>
+                                <small class="flex-fill text-center py-2">
+                                    <i class="fa fa-user me-2"></i>2+ Persons
+                                </small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$655.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">8 Days – Essence of Sri Lanka</h5>
+                                <small class="text-uppercase">Heritage · Culture · Wildlife</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star-half-alt text-primary"></small>
+                                </div>
+                                <p class="mb-4">From Sigiriya to Colombo, this immersive 8-day road trip blends history,
+                                    nature, and relaxation across Sri Lanka’s must-see highlights.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4"
+                                        href="8-days-essence-of-sri-lanka.html">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Car and Driver Package" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-car-driver.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Sri Lanka</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>Per Day</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Up to 4
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$85.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Custom Tour – Car & Driver</h5>
+                                <small class="text-uppercase">Flexible</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star-half-alt text-primary"></small>
+                                </div>
+                                <p class="mb-4">Design your own Sri Lankan adventure! We'll provide a car and
+                                    professional driver — you choose where to go.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="car-driver.html">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Waterfall Hunting in Hill Country" class="img-fluid w-100 rounded-top"
+                                src="img/waterfall-hunting-srilanka.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Hill Country</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>4 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">479.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Waterfall Hunting in Hill Country</h5>
+                                <small class="text-uppercase">Nature</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Chase cascading waterfalls hidden in lush green hills, including
+                                    Bambarakanda and
+                                    Diyaluma falls.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="4-days-waterfall-hunting.html">Read
+                                        More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Knuckles Hiking Expedition" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-knuckles.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Knuckles Range</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>4 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$699.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Knuckles Hiking Expedition</h5>
+                                <small class="text-uppercase">Adventure</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Trek through the misty Knuckles Mountain Range, explore hidden
+                                    waterfalls,
+                                    and camp under starlit skies in Sri Lanka’s central highlands.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="knuckles-hike.html">Read
+                                        More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Yala Wildlife Safari" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-yala.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Yala National Park</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>2 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$349.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Yala Wildlife Safari</h5>
+                                <small class="text-uppercase">Wildlife</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Embark on a thrilling jeep safari through Yala National Park, home to
+                                    leopards, elephants, sloth bears, and diverse birdlife.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="yala-safari.html">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Trincomalee Beach Retreat" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-trincomalee.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Trincomalee</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>4 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$399.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Trincomalee Beach Retreat</h5>
+                                <small class="text-uppercase">Beach</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Relax on the golden sands of Nilaveli, enjoy whale watching in the
+                                    Indian
+                                    Ocean, and snorkel around Pigeon Island’s coral reefs.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="trincomalee-beach.html">Read
+                                        More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Sigiriya Rock Fortress" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-sigiriya.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Sigiriya</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>2 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$249.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Sigiriya Rock Fortress</h5>
+                                <small class="text-uppercase">Cultural</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Climb the iconic Sigiriya rock fortress, explore ancient frescoes, and
+                                    stroll through
+                                    royal gardens.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="sigiriya-tour.html">Read
+                                        More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Nuwara Eliya Tea Trails" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-nuwaraeliya.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Nuwara Eliya</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>3 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$299.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Nuwara Eliya Tea Trails</h5>
+                                <small class="text-uppercase">Scenic</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Wander through lush tea plantations, visit colonial-era estates, and
+                                    savor highland
+                                    charm in Little England.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="nuwara-eliya-tea.html">Read
+                                        More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+
+                <!-- Package 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Ella and Haputale Scenic Escape" class="img-fluid w-100 rounded-top"
+                                src="img/ella-haputale-scenery.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Ella & Haputale</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>3 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$349.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Ella and Haputale Scenic Escape</h5>
+                                <small class="text-uppercase">Panoramic</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Hike to Ella Rock, admire the Nine Arches Bridge, and sip tea in
+                                    Haputale’s mountain
+                                    air.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="ella-haputale.html">Read
+                                        More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Colombo City Tour" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-colombo.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Colombo</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>1 day</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$99.00</div>
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Colombo City Tour</h5>
+                                <small class="text-uppercase">Urban</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Discover the vibrant capital with a guided tour through colonial
+                                    landmarks, temples, and bustling markets.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="colombo-city.html">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img alt="Anuradhapura and Polonnaruwa Tour" class="img-fluid w-100 rounded-top"
+                                src="img/sri-lanka-anuradhapura.jpg" />
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                                style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-map-marker-alt me-2"></i>Cultural Triangle</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt me-2"></i>3 days</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>2
+                                    Person</small>
+                            </div>
+                            <div class="packages-price py-2 px-4">$379.00</div>
+                        </div> 
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Anuradhapura & Polonnaruwa Tour</h5>
+                                <small class="text-uppercase">Historic</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Step into the ancient capitals and explore stupas, stone carvings, and
+                                    UNESCO World Heritage temples.</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4"
+                                        href="anuradhapura-polonnaruwa.html">Read More</a>
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a class="btn-hover btn text-white py-2 px-4" href="booking.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Get In Touch</h4>
+                        <a href=""><i class="fas fa-home me-2"></i> 182/29, Rukmal Place, Negombo</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> info@celestia_travels.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> +94 0775859726</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-white me-2"></i>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <div class="row gy-3 gx-2 mb-4">
+                            <div class="col-xl-6">
+                                <form>
+                                    <div class="form-floating">
+                                        <label for="select1">English</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-6">
+                                <form>
+                                    <div class="form-floating">
+                                        <select class="form-select bg-dark border" id="select1">
+                                            <option value="1">USD</option>
+                                            <option value="2">EUR</option>
+                                            <option value="3">INR</option>
+                                            <option value="3">GBP</option>
+                                        </select>
+                                        <label for="select1">$</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <h4 class="text-white mb-3">Payments</h4>
+                        <div class="footer-bank-card">
+                            <a class="text-white me-2" href="#"><i class="fab fa-cc-amex fa-2x"></i></a>
+                            <a class="text-white me-2" href="#"><i class="fab fa-cc-visa fa-2x"></i></a>
+                            <a class="text-white me-2" href="#"><i class="fas fa-credit-card fa-2x"></i></a>
+                            <a class="text-white me-2" href="#"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                            <a class="text-white me-2" href="#"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                            <a class="text-white" href="#"><i class="fab fa-cc-discover fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-body py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                    <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Celestia Travels</a>, All right
+                    reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
+                        href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top" href="#"><i
+            class="fa fa-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
